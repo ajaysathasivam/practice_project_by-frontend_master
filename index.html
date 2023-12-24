@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Blog preview card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body{
+      background-color: hsl(47, 88%, 63%);
+      font-family: 'Figtree', sans-serif;
+
+    }
+    .container{
+      background-color: white;
+      width:100vh ;
+      height: 100vh;
+      border-radius: 20px;
+      border: 1px solid  hsl(0, 0%, 7%);
+      box-shadow: 10px 10px 2px  hsl(0, 0%, 7%);
+      scroll-behavior: smooth;
+    }
+    @media screen and(max-width:370px) {
+      .container{
+      box-shadow: 2px 2px 0px  hsl(0, 0%, 7%);
+      }
+    }
+
+    @media screen and (min-width:350px) {
+    .container{
+      background-color: white;
+      width:100vh ;
+      height: 100vh;
+      margin: 10% auto;
+      border-radius: 20px;
+      border: 1px solid  hsl(0, 0%, 7%);
+      box-shadow: 10px 10px 2px  hsl(0, 0%, 7%);
+      max-width: 350px;
+      max-height: 500px;
+      scroll-behavior: smooth;
+    }
+    .img{
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 90%;
+      height:200px;
+      background-image: url(./assets/images/illustration-article.svg);
+      background-position: center;
+    }
+    .content{
+      margin: 20px auto;
+      width: 90%;
+      height:200px;
+    }
+    .content>button{
+      background-color:hsl(47, 88%, 63%);
+      padding: 4px 10px;
+      border-radius: 3px;
+      color:hsl(0, 0%, 7%);
+      font-weight:800;
+      border: none;
+    }
+    .content_detail,.content_para{
+      margin: 15px 0px;
+    }
+    .content_para{
+      font-size: 16px;
+      width: 100%;
+      opacity: 0.5;
+      margin-bottom: 30px;
+    }
+    h3{
+      color:hsl(0, 0%, 7%);
+    }
+    h3:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    .profile,h3,h4,button{
+      cursor: pointer;
+    }
+    .profile_con{
+      display: flex;
+      align-items: center;
+    }
+    .profile{
+      width: 40px;
+      height: 40px;
+      border-radius: 25px;
+      background-image: url(/assets/images/image-avatar.webp);
+      background-size: contain;
+      margin-right: 10px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img">
+    </div>
+    <div class="content">
+      <button>Learning</button>
+      <p class="content_detail">Published 21 Dec 2023</p>
+      <h3>HTML & CSS foundations</h3>
+      <p class="content_para">
+        These language are the backbone of every website,defining struture, content, and presentation.
+      </p>
+      <div class="profile_con">
+        <div class="profile"></div>
+        <h4>Greg Hooper</h4>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
